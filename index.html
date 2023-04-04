@@ -1,54 +1,66 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Minha Página Inicial</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li class="dropdown">
-            <a href="#">Products</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Product 1</a></li>
-              <li><a href="#">Product 2</a></li>
-              <li><a href="#">Product 3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Contact</a></li>
+
+<head>
+  <title>Minha Página Inicial</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
         </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Links</a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <section style="display: flex; flex-direction: row; align-items: center; padding: 50px;">
+    <img src="assets/images/food18.jpeg" alt="Imagem" style="width: 50%;">
+    <p style="padding: 20px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+      justo libero.
+      Pellentesque habitant morbi
+      tristique senectus et netus et malesuada fames ac turpis egestas. Donec a velit euismod, lacinia mauris vel,
+      dapibus sapien. Etiam volutpat, quam a molestie tristique, odio augue mattis ipsum, vitae gravida ante ante sit
+      amet sem. Sed at lectus ac ipsum vestibulum suscipit nec vitae urna. Donec non justo blandit, imperdiet tellus
+      sed, blandit enim. Aenean non dui magna.</p>
+  </section>
+
+  <section style="padding-bottom: 10px;">
+    <nav class="links">
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
     </nav>
-    <section style="display: flex; flex-direction: row; align-items: center; padding: 50px;">
-      <img src="assets/images/food18.jpeg" alt="Imagem" style="width: 50%;">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel justo libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec a velit euismod, lacinia mauris vel, dapibus sapien. Etiam volutpat, quam a molestie tristique, odio augue mattis ipsum, vitae gravida ante ante sit amet sem. Sed at lectus ac ipsum vestibulum suscipit nec vitae urna. Donec non justo blandit, imperdiet tellus sed, blandit enim. Aenean non dui magna.</p>
-    </section>
-    <section style="padding: 20px;">
-        <div class="links">
-            <div class="link">
-              <a href="#">Link 1</a>
-            </div>
-            <div class="link">
-              <a href="#">Link 2</a>
-            </div>
-            <div class="link">
-              <a href="#">Link 3</a>
-            </div>
-            <div class="link">
-              <a href="#">Link 4</a>
-            </div>
-          </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="p-3">
-                  © 2023 Copyright Nicollas
-            </div>
-        </div>
-    </footer>
-  </body>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="p-3">
+        © 2023 Copyright Nicollas
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>

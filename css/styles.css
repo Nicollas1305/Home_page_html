@@ -17,14 +17,34 @@ ul {
   padding: 0;
 }
 
+ul,
 li {
   display: inline-block;
+  position: relative;
   padding: 15px;
 }
 
-a, link{
+ul li a {
+  display: block;
+  padding: 10px;
   color: #000000;
   text-decoration: none;
+}
+
+ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  z-index: 1;
+}
+
+/* Exibindo o dropdown quando o item do menu é hoverado */
+ul li:hover .dropdown-menu {
+  display: block;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -64,11 +84,13 @@ a, link{
   text-align: center;
   width: 150px;
 }
+
 .link a {
   text-decoration: none;
   color: #e3f2fd;
   font-weight: bold;
 }
+
 .link:hover {
   background-color: #ddd;
 }
